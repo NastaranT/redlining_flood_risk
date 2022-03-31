@@ -2,11 +2,11 @@
 library(dplyr)
 library(plotly)
 
-new_orleans= read.csv("C:/Users/nasta/OneDrive - The Pennsylvania State University/Current-2021/PhD/NFIP paper/Redlining/Data/redline_100_intersects/neworleans_intersect_data.txt")
-philly= read.csv("C:/Users/nasta/OneDrive - The Pennsylvania State University/Current-2021/PhD/NFIP paper/Redlining/Data/redline_100_intersects/philly_intersect_data.txt")
-brooklyn= read.csv("C:/Users/nasta/OneDrive - The Pennsylvania State University/Current-2021/PhD/NFIP paper/Redlining/Data/redline_100_intersects/brooklyn_intersect_data.txt")
-miami=read.csv("C:/Users/nasta/OneDrive - The Pennsylvania State University/Current-2021/PhD/NFIP paper/Redlining/Data/redline_100_intersects/maimi_intersect_data.txt")
-houston=read.csv("C:/Users/nasta/OneDrive - The Pennsylvania State University/Current-2021/PhD/NFIP paper/Redlining/Data/redline_100_intersects/houston_intersect_data.txt")
+new_orleans= read.csv("data/neworleans_intersect_data.txt")
+philly= read.csv("data/philly_intersect_data.txt")
+brooklyn= read.csv("data/brooklyn_intersect_data.txt")
+miami=read.csv("data/maimi_intersect_data.txt")
+houston=read.csv("data/houston_intersect_data.txt")
 
 
 
@@ -19,11 +19,11 @@ head(df2)
 
 df2$percent_area= (df2$area_sf/70435582.608474)*100
 
-# neworlean total area of 100 flood: 111727302.334948
-# philly total area of 100 flood: 70435582.608474
-# brooklyn total area of 100 flood: 39844824.177483
-# miami total area of 100 flood:76786307.768851
-# houston total area of 100 flood:47499831.314758
+# neworlean total area of 100 flood intersect: 111727302.334948 sq ft
+# philly total area of 100 flood intersect: 70435582.608474  sq ft
+# brooklyn total area of 100 flood intersect: 39844824.177483  sq ft
+# miami total area of 100 flood intersect:76786307.768851  sq ft
+# houston total area of 100 flood intersect:47499831.314758  sq ft
 
 
 
